@@ -236,7 +236,7 @@ const About: React.FC = () => {
     },
     {
       year: "Research Project",
-      title: "— Comforting Myths",
+      title: "Comforting Myths",
       desc: "How cultural belief systems give false gratification and shape behaviour.",
     },
   ];
@@ -297,7 +297,7 @@ const About: React.FC = () => {
                       </a>
                       <a aria-label="LinkedIn" href="https://linkedin.com/in/vaishnavibhadana" className="text-muted-foreground hover:text-foreground">
                         <Linkedin className="w-5 h-5" />
-                        <span>vaishnavibhadana</span>
+                        <span></span>
                       </a>
                       {/* <a aria-label="Twitter" href="#" className="text-muted-foreground hover:text-foreground">
                         <Twitter className="w-5 h-5" />
@@ -348,7 +348,7 @@ const About: React.FC = () => {
                   <ul className="list-disc list-inside text-sm text-muted-foreground mt-2 space-y-1">
                     <li>
                       Research Project - Mental Health and Political Polarisation among Youth
-                      ⇴ Conducted an independent study exploring the psychological and social impact of polarisation on youth mental health. Developed analytical and data interpretation skills
+                      - Conducted an independent study exploring the psychological and social impact of polarisation on youth mental health. Developed analytical and data interpretation skills
                     </li>
                     <li>
                       Companion App — Founder
