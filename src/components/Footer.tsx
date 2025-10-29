@@ -1,11 +1,12 @@
 // /F:/medHelp/src/components/Footer.tsx
 import { Button } from "@/components/ui/button";
+import { GoalIcon } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
   const goToAbout = () => {
-    // simple, framework-agnostic redirect to the AboutMe page you will add at ./components/pages
-    window.location.href = "/about-me";
+    
+    window.location.href = "/about";    
   };
 
   return (

@@ -14,6 +14,7 @@ import Resources from "./pages/Resources";
 import Feedback from "./pages/Feedback";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
+import About from "./pages/About";
 
 const queryClient = new QueryClient();
 
@@ -47,10 +48,13 @@ const App = () => (
               <Route path="/crisis" element={<ProtectedRoute><Crisis /></ProtectedRoute>} />
               <Route path="/resources" element={<ProtectedRoute><Resources /></ProtectedRoute>} />
               <Route path="/feedback" element={<ProtectedRoute><Feedback /></ProtectedRoute>} />
+              <Route path="/about" element={<ProtectedRoute><About /></ProtectedRoute>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
-          <Footer />
+
+          {location.pathname !== "/about" && <Footer />}
+          
         </div>
       </BrowserRouter>
     </TooltipProvider>

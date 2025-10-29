@@ -38,7 +38,7 @@ export const ChatBot = () => {
     setIsThinking(true);
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chat`, {
+      const response = await fetch(`https://chitchatfs.onrender.com/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: content })
@@ -54,10 +54,27 @@ export const ChatBot = () => {
       setMessages(prev => [...prev, { role: 'assistant', content: reply }]);
     } catch (error) {
       console.error('Chat error:', error);
-      setMessages(prev => [...prev, { 
-        role: 'assistant', 
-        content: 'Sorry, I encountered a network error. Please try again.' 
-      }]);
+    //   setMessages(prev => [...prev, { 
+    //     role: 'assistant', 
+    //     content: 'Sorry, I encountered a network error. Please try again.' 
+    //   }]);
+    // } finally {
+    //   setIsThinking(false);
+    // }
+      try {
+        fetch('https://chitchatfs.onrender.com/', { method: 'GET', mode: 'no-cors' })
+          .catch(() => { /* ignore network errors from the ping */ });
+      } catch (e) {
+        /* ignore synchronous errors from fetch invocation */
+      }
+
+      setMessages(prev => [
+        ...prev,
+        {
+          role: 'assistant',
+          content: 'Sorry, I encountered a network error. Please try again.'
+        }
+      ]);
     } finally {
       setIsThinking(false);
     }
