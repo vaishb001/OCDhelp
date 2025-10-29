@@ -221,24 +221,23 @@ import {
 
 const About: React.FC = () => {
   const skills = [
-    "React / TypeScript",
-    "Tailwind CSS",
-    "Node.js / Express",
-    "Accessibility (a11y)",
-    "User-centered design",
-    "Data structures & algorithms",
+    " Python ",
+    " Hindi (Native) ",
+    " Spanish (Learning) ",
+    " Writing ",
+    " Psychology "
   ];
 
   const timeline = [
     {
-      year: "2023",
-      title: "Open-source contributions",
-      desc: "Contributed UI fixes and documentation to two OSS projects; improved component accessibility.",
+      year: "Research Project ",
+      title: "Mental Health and Political Polarisation among Youth",
+      desc: "Conducted an independent study exploring the psychological and social impact of polarisation on youth mental health. Developed analytical and data interpretation skills.",
     },
     {
-      year: "2024",
-      title: "Capstone / Projects",
-      desc: "Built Calm Companion UI & chat flows as a student project exploring supportive UX.",
+      year: "Research Project",
+      title: "— Comforting Myths",
+      desc: "How cultural belief systems give false gratification and shape behaviour.",
     },
   ];
 
@@ -253,7 +252,7 @@ const About: React.FC = () => {
             <div>
               <h1 className="text-2xl font-semibold">Vaishnavi Bhadana - Psychology</h1>
               <p className="text-sm text-muted-foreground">
-                Undergraduate student focused on human-centered software, accessible interfaces, and health-oriented UX.
+                Fortis Noida — Psychology Intern | Community Outreach Volunteer on child welfare.
               </p>
             </div>
           </div>
@@ -276,7 +275,7 @@ const About: React.FC = () => {
                   <div>
                     <CardTitle className="text-lg">About Vaishnavi</CardTitle>
                     <CardDescription className="text-sm text-muted-foreground">
-                      Computer Science student building inclusive interfaces and practical tools for wellbeing.
+                      Independent Researcher — Mental Health and Political Polarisation among Youth
                     </CardDescription>
                   </div>
                 </div>
@@ -285,23 +284,24 @@ const About: React.FC = () => {
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <MapPin className="w-4 h-4" />
-                    <span>Based in Remote / City, Country</span>
+                    <span>Based in Ghaziabad, India</span>
                   </div>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4" />
-                    <span>B.S. CS — Class of 2026</span>
+                    <span>Humanities - Class of 2026</span>
                   </div>
                   <div className="pt-2">
                     <div className="flex gap-2">
                       <a aria-label="GitHub" href="#" className="text-muted-foreground hover:text-foreground">
                         <Github className="w-5 h-5" />
                       </a>
-                      <a aria-label="LinkedIn" href="#" className="text-muted-foreground hover:text-foreground">
+                      <a aria-label="LinkedIn" href="https://linkedin.com/in/vaishnavibhadana" className="text-muted-foreground hover:text-foreground">
                         <Linkedin className="w-5 h-5" />
+                        <span>vaishnavibhadana</span>
                       </a>
-                      <a aria-label="Twitter" href="#" className="text-muted-foreground hover:text-foreground">
+                      {/* <a aria-label="Twitter" href="#" className="text-muted-foreground hover:text-foreground">
                         <Twitter className="w-5 h-5" />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
 
@@ -347,7 +347,32 @@ const About: React.FC = () => {
                   <h3 className="font-medium">Projects & Experience</h3>
                   <ul className="list-disc list-inside text-sm text-muted-foreground mt-2 space-y-1">
                     <li>
-                      Calm Companion — student project exploring supportive micro-interventions and calm UX.
+                      Research Project - Mental Health and Political Polarisation among Youth
+                      ⇴ Conducted an independent study exploring the psychological and social impact of polarisation on youth mental health. Developed analytical and data interpretation skills
+                    </li>
+                    <li>
+                      Companion App — Founder
+                      - A self help tool for people with OCD.
+
+                    </li>
+                    <li>
+                      Fortis Noida — Psychology Intern
+                      - Studied psychological disorders, diagnostic processes, and therapeutic treatments under expert supervision.
+
+                    </li>
+                    <li>
+                      Anagh Foundation — Volunteer
+                      - Supported community outreach programs focused on child welfare and education.
+
+                    </li>
+                    <li>
+                      Paws and effect – Founder
+                      -Created and manage an Instagram platform dedicated to helping stray animals find shelter and care.
+
+                    </li>
+                    <li>
+                      Paws and effect – Founder
+                      -Created and manage an Instagram platform dedicated to helping stray animals find shelter and care.
                     </li>
                   </ul>
                 </div>
@@ -378,14 +403,12 @@ const About: React.FC = () => {
               <CardContent className="p-4 md:p-6">
                 <h3 className="font-semibold">Want to connect or collaborate?</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  I'm open to internships, research help, and collaboration on accessible UI projects. Reach out via email or GitHub.
+                  I'm open to internships, research help, and collaboration on Psychology projects. Reach out via email.
                 </p>
                 <div className="pt-4 flex gap-3 flex-wrap">
-                  <Button asChild variant="outline" size="sm">
-                    <a href="#" rel="noopener">View GitHub</a>
-                  </Button>
+
                   <Button asChild size="sm">
-                    <a href="mailto:alex.martinez@example.com">Email</a>
+                    <a href="mailto:vaishnavibhadana2@gmail.com">Email</a>
                   </Button>
                 </div>
               </CardContent>
